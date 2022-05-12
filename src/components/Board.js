@@ -43,7 +43,19 @@ const Board = () => {
       }));
     }
   };
-  const addList = addingList ? (React.createElement(AddList, { toggleAddingList: toggleAddingList })) : (React.createElement(Button, { variant: "outlined", className: classes.button, startIcon: React.createElement(AddIcon, null), onClick: toggleAddingList }, "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u043A\u043E\u043B\u043E\u043D\u043A\u0443"));
+  const addList = addingList ? (
+    <AddList
+      toggleAddingList={toggleAddingList}
+    />) : (<Button
+      variant="outlined"
+      className={classes.button}
+      startIcon={<AddIcon />}
+      onClick={toggleAddingList}
+    >
+      Add column
+    </Button>
+  );
+
   return (
     <DragDropContext onDragEnd={handleDragEnd}>
       <Droppable droppableId="board" direction="horizontal" type="COLUMN">

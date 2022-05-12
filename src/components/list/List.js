@@ -61,7 +61,7 @@ const List = ({ listId }) => {
         <AddCard toggleAddingCard={toggleAddingCard} listId={listId} />
       ) : (
         <Button startIcon={<AddIcon />} onClick={toggleAddingCard}>
-          Добавить карточку
+          Add Column
         </Button>
       )}
     </Grid>
