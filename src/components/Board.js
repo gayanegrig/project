@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   board: {
     height: "95vh",
     display: "flex",
-    backgroundColor: "#0079bf",
+    backgroundColor: "#656768",
     padding: theme.spacing(2),
     color: theme.palette.text.secondary,
     overflowX: "auto",
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     width: "272px",
     minWidth: "272px",
     height: "40px",
-    backgroundColor: "hsla(0,0%,100%,.24)",
+    backgroundColor: "#6a665a",
     color: "#fff",
   },
 }));

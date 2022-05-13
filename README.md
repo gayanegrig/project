@@ -15,7 +15,6 @@ A simple task management web application using React, Redux Toolkit and Material
 ## Technologies used
 
 - React
-- Typescript
 - Redux Toolkit (for state management)
 - Localstorage (used to persist tasks)
 - Material UI (react component library)

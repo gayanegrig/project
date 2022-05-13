@@ -21,7 +21,7 @@ const AddList = ({ toggleAddingList }) => {
   return (
     <Grid container direction="column" style={{ height: 'fit-content', width: '270px', minWidth: '270px' }}>
       <TextField
-        placeholder="Название колонки"
+        placeholder="Column name"
         variant="outlined"
         size="small" margin="dense"
         value={listTitle}
@@ -29,7 +29,7 @@ const AddList = ({ toggleAddingList }) => {
         onKeyDown={onEnter}
       />
       <Grid container alignItems="center">
-        <Button onClick={createList}>Добавить колонку</Button>
+        <Button onClick={createList}>ADD COLUMN</Button>
         <CloseIcon onClick={toggleAddingList} />
       </Grid>
     </Grid>

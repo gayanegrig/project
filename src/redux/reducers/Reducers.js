@@ -88,7 +88,6 @@ export const listsByIdReducer = createReducer({}, (builder) =>
     })
     .addCase(delCard, (state, action) => {
       const { cardId: deletedCardId, listId } = action.payload;
-      console.log('listId', deletedCardId)
       const filterDeleted = (cardId) => cardId !== deletedCardId;
       return {
         ...state,
@@ -99,6 +98,7 @@ export const listsByIdReducer = createReducer({}, (builder) =>
       };
     })
 );
+
 export const cardsByIdReducer = createReducer({}, (builder) =>
   builder
     .addCase(addCard, (state, action) => {
@@ -106,6 +106,7 @@ export const cardsByIdReducer = createReducer({}, (builder) =>
       return {
         ...state, [cardId]: {
           text: cardTitle, _id: cardId, desc: '',
+          date: ''
         }
       };
     })
