@@ -16,6 +16,7 @@ A simple task management web application using React, Redux Toolkit and Material
 - React Router
 
 ######################################################
+Task Description
 
 Frontend - Home Exercise
 Hi there,
