@@ -1,4 +1,4 @@
-# Project Taskify
+# Project Task Management
 
 A simple task management web application using React, Redux Toolkit and Material UI
 
